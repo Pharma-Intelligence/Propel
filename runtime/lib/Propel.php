@@ -733,7 +733,7 @@ class Propel
 
             if(is_array($optiondata)) {
                 $value = $optiondata['value'];
-            } elseif(is_string($optiondata['value'])) {
+            } elseif(is_string($optiondata)) {
                 $value = $optiondata;
             } else {
                 throw new PropelException("Invalid type for value for key: " . $key);
